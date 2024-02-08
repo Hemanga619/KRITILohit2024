@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PlatformMover : MonoBehaviour
 {
-    public GameObject currentPlatform;
+    private GameObject currentPlatform;
     private Vector3 offset;
     void Start()
     {
-
+        currentPlatform = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
